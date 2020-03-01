@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package opassing;
 
-/**
- *
- * @author acer
- */
 public class Opassing {
+
+    int x = 9;
+    void ChangeOValue(Opassing p) 
+    {
+        p.x++;
+    }
     
+    public static void main(String[] args)
+    {
+        Opassing abc = new Opassing();
+        System.out.println("x=" + abc.x);
+        abc.ChangeOValue(abc);
+        System.out.println("x=" + abc.x);
+        
+    }
+
 }
